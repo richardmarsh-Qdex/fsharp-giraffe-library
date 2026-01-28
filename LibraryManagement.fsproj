@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>LibraryManagement</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="LibraryManagement/Models/Models.fs" />
+    <Compile Include="LibraryManagement/Data/Database.fs" />
+    <Compile Include="LibraryManagement/Handlers/BooksHandlers.fs" />
+    <Compile Include="LibraryManagement/Handlers/MembersHandlers.fs" />
+    <Compile Include="LibraryManagement/Handlers/LoansHandlers.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Giraffe" Version="6.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>
